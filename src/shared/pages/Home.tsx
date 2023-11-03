@@ -1,3 +1,5 @@
+import { Header } from "../components/Header/Header";
+
 export const Home = () => {
-  return <h1>Hello games</h1>;
+  return <Header></Header>;
 };
