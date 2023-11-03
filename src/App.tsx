@@ -1,5 +1,16 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./shared/pages/Home";
+
 function App() {
-  return <h1>Hello Game</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/about" element={<About />} />
+          <Route path="*" element={<PageNotFound />} /> */}
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
