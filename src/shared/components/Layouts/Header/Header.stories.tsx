@@ -1,11 +1,10 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { Header } from "./Header";
-import { LEVEL } from "../../../utils/const";
 import { withRouter } from "storybook-addon-react-router-v6";
 
 export default {
   component: Header,
-  title: "Layouts/Header",
+  title: "Components/Layouts/Header",
   tags: ["Header"],
   decorators: [withRouter],
   parameters: {
@@ -18,9 +17,12 @@ const Template: StoryFn<typeof Header> = ({ ...rest }) => {
 };
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  level: "h1",
+};
 
 export const HeaderLevel2 = Template.bind({});
 HeaderLevel2.args = {
-  level: LEVEL.l2,
+  gameName: "test Games",
+  level: "h2",
 };

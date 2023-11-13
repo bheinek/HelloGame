@@ -4,7 +4,7 @@ import { withRouter } from "storybook-addon-react-router-v6";
 
 export default {
   component: CardWithContent,
-  title: "Elements/Card With Content",
+  title: "Components/Elements/Card With Content",
   tags: ["CardWithContent"],
   decorators: [withRouter],
   parameters: {

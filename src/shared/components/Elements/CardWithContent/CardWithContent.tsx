@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Typography } from "../BasicElements/_index";
 import { Card } from "../_index";
 
 type Props = {
@@ -11,15 +11,15 @@ type Props = {
 export const CardWithContent = ({ title, image, description, link }: Props) => {
   const imageAlt = `${title} image`;
 
-  const cardContent = (
-    <Card>
+  return (
+    <Card link={link}>
       {image && (
         <img className="h-4/5 w-full object-cover" src={image} alt={imageAlt} />
       )}
-      <h1 className="mt-2">{title}</h1>
-      {description && <p>{description}</p>}
+      <Typography level="h1" className="mt-2">
+        {title}
+      </Typography>
+      {description && <Typography>{description}</Typography>}
     </Card>
   );
-
-  return link ? <Link to={link}> {cardContent} </Link> : cardContent;
 };
