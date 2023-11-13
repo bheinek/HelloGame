@@ -1,10 +1,12 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { CardWithContent } from "./CardWithContent";
+import { withRouter } from "storybook-addon-react-router-v6";
 
 export default {
   component: CardWithContent,
-  title: "Shared/Elements/Card With Content",
+  title: "Elements/Card With Content",
   tags: ["CardWithContent"],
+  decorators: [withRouter],
   parameters: {
     layout: "centered",
   },
@@ -26,5 +28,5 @@ CardWithLink.args = {
   title: "Card with link",
   image: "src/shared/assets/_storybook/placeholder.png",
   description: "This is the testing card",
-  link: "./home",
+  link: "./",
 };
