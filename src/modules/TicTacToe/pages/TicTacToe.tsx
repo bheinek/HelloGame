@@ -1,4 +1,4 @@
-import { GamesPageLayout } from "../../../shared/components/Layouts/GamesPageLayout/GamesPageLayout";
+import { GamesPageLayout } from "@/shared/components/_index";
 import { Game, ScoreBoard } from "../components/Layout/_index";
 
 export const TicTacToe = () => {

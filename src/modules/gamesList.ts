@@ -1,5 +1,5 @@
-import { ROUTES } from "../router/routes";
-import { GameCard } from "../shared/utils/types";
+import { ROUTES } from "@/router/routes";
+import { GameCard } from "@/shared/types/mockData";
 
 export const gamesList: GameCard[] = [
   {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Level } from "../../../utils/types";
+import { Level } from "@/shared/types/levels";
 
 type Props = { level: Level; gameName?: string };
 

@@ -1,4 +1,4 @@
-import { GameBoardLayout } from "../../../../../shared/components/Layouts/GamesPageLayout/_index";
+import { GameBoardLayout } from "@/shared/components/_index";
 
 type Props = {
   rowsCount?: number;

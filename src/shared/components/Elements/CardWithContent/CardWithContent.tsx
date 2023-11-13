@@ -1,5 +1,4 @@
-import { Typography } from "../BasicElements/_index";
-import { Card } from "../_index";
+import { Card, Typography } from "@/shared/components/_index";
 
 type Props = {
   title: string;

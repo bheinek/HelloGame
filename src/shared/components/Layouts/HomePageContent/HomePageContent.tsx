@@ -1,5 +1,5 @@
-import { GameCard } from "../../../utils/types";
-import { GamesCard, OverviewGrid } from "../../Elements/_index";
+import { GamesCard, OverviewGrid } from "@/shared/components/_index";
+import { GameCard } from "@/shared/types/mockData";
 
 type Props = {
   games: GameCard[];

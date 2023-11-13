@@ -2,7 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { OverviewGrid } from "./OverviewGrid";
 import { withRouter } from "storybook-addon-react-router-v6";
 import { GamesCard } from "../_index";
-import { GameCard } from "../../../utils/types";
+import { GameCard } from "../../../types/levels";
 
 export default {
   component: OverviewGrid,

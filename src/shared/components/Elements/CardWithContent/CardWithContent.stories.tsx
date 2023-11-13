@@ -1,6 +1,7 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { CardWithContent } from "./CardWithContent";
+
 import { withRouter } from "storybook-addon-react-router-v6";
+import { CardWithContent } from "./CardWithContent";
 
 export default {
   component: CardWithContent,

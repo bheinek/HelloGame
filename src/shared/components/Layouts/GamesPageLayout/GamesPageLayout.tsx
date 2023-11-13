@@ -1,7 +1,9 @@
 import { ReactNode } from "react";
-import { Header } from "../_index";
-
-import { GameBarLayout, GameBoardLayout } from "./_index";
+import {
+  GameBarLayout,
+  GameBoardLayout,
+  Header,
+} from "@/shared/components/_index";
 
 type Props = {
   gameName: string;

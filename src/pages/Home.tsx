@@ -1,6 +1,5 @@
-import { gamesList } from "../modules/gamesList";
-import { HomePageContent } from "../shared/components/_index";
-import { Header } from "../shared/components/Layouts/Header/Header";
+import { gamesList } from "@/modules/gamesList";
+import { Header, HomePageContent } from "@/shared/components/_index";
 
 export const Home = () => {
   return (

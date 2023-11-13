@@ -1,5 +1,5 @@
-import { GameCard } from "../../../utils/types";
-import { CardWithContent } from "../_index";
+import { CardWithContent } from "@/shared/components/_index";
+import { GameCard } from "@/shared/types/mockData";
 
 type Props = {
   game: GameCard;
