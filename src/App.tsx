@@ -1,4 +1,4 @@
-import { RootRoutes } from "./shared/routing/RootRoutes";
+import { RootRoutes } from "./router/RootRoutes";
 
 function App() {
   return <RootRoutes />;
