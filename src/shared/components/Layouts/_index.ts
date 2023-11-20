@@ -1,3 +1,2 @@
-export * from "./HomePageContent/HomePageContent";
-export * from "./Header/Header";
-export * from "./GamesPageLayout/_index";
+export * from "./BasicLayouts/_index";
+export * from "./GameBoardLayout/GameBoardLayout";

@@ -1,13 +1,18 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { Typography } from "./Typography";
+import { textVariants } from "./utils";
 
 export default {
   component: Typography,
-  title: "Components/BasicElements/Typography",
+  title: "Shared/Components/BasicElements/Typography",
   tags: ["Typography"],
   argTypes: {
-    level: {
-      options: ["h1", "h2", "h3", "h4", "h5", "h6", "body1"],
+    variant: {
+      options: Object.keys(textVariants),
+      control: { type: "select" },
+    },
+    as: {
+      options: Object.keys(textVariants),
       control: { type: "select" },
     },
   },
@@ -23,5 +28,6 @@ const Template: StoryFn<typeof Typography> = ({ ...rest }) => {
 export const Default = Template.bind({});
 Default.args = {
   children: "Lorem Ipsum",
-  level: "h1",
+  variant: "h1",
+  as: "h1",
 };

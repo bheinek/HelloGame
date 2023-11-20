@@ -5,5 +5,5 @@ type Props = {
 };
 
 export const OverviewGrid = ({ children }: Props) => {
-  return <div className="flex gap-x-1">{children}</div>;
+  return <div className="flex flex-wrap gap-4">{children}</div>;
 };

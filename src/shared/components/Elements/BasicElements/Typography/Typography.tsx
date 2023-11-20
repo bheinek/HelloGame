@@ -1,46 +1,27 @@
-import { ReactNode } from "react";
-import { Level } from "@/shared/types/levels";
 import { cx } from "@/shared/utils/classNames";
+import type { FC, HTMLAttributes } from "react";
+import { textVariants } from "./utils";
 
 type Props = {
-  level?: Level;
-  children: ReactNode;
-  className?: string;
-} & JSX.IntrinsicElements["text"];
+  as?: keyof typeof textVariants;
+  variant?: keyof typeof textVariants;
+} & HTMLAttributes<HTMLHeadingElement>;
 
-export const Typography = ({
-  level = "body1",
+export const Typography: FC<Props> = ({
   children,
   className,
+  as,
+  variant = "p",
   ...rest
-}: Props) => {
-  switch (level) {
-    case "h1":
-      return (
-        <h1
-          className={cx("", className)}
-          {...(rest as JSX.IntrinsicElements["h1"])}
-        >
-          {children}
-        </h1>
-      );
-    case "h2":
-      return (
-        <h2
-          className={cx("", className)}
-          {...(rest as JSX.IntrinsicElements["h2"])}
-        >
-          {children}
-        </h2>
-      );
-    case "body1":
-      return (
-        <p
-          className={cx("", className)}
-          {...(rest as JSX.IntrinsicElements["p"])}
-        >
-          {children}
-        </p>
-      );
-  }
+}) => {
+  const Tag = as || variant;
+
+  return (
+    <Tag
+      className={cx("font-semibold", textVariants[variant], className)}
+      {...rest}
+    >
+      {children}
+    </Tag>
+  );
 };

@@ -5,5 +5,5 @@ type Props = {
 };
 
 export const GameBoardLayout = ({ children }: Props) => {
-  return <div>{children}</div>;
+  return <div className="">{children}</div>;
 };

@@ -1,5 +1,3 @@
-import { GameBoardLayout } from "@/shared/components/_index";
-
 type Props = {
   rowsCount?: number;
   colsCount?: number;
@@ -16,8 +14,8 @@ export const Game = ({ rowsCount = 3, colsCount = 3 }: Props) => {
   }
 
   return (
-    <GameBoardLayout>
+    <>
       <table>{board}</table>
-    </GameBoardLayout>
+    </>
   );
 };
